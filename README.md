@@ -5,7 +5,7 @@ An applied mathematics and data analysis framework designed to optimise the oper
 
 ---
 
-## 📋 Problem Statement
+##  Problem Statement
 
 In South Africa, large-scale independent power producers (IPPs) face severe structural and financial inefficiencies due to two main factors:
 1. **Grid Interconnection Constraints:** IPPs are bound by a strict Maximum Export Capacity (MEC) limit at the grid connection point. During peak solar hours, generation regularly exceeds this limit, resulting in **midday inverter clipping (curtailment)** where free green energy is permanently wasted.
