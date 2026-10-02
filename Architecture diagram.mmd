@@ -1,0 +1,15 @@
+graph LR
+    A[50MW Solar Generation] --> B{Check MEC Grid Limit}
+    B -->|Exceeds 40MW Limit| C[Route Clipping to BESS]
+    B -->|Within 40MW Limit| D{Check Eskom Tariff}
+    
+    D -->|Peak Hour R3600| E[Discharge BESS to Grid]
+    D -->|Standard Hour R1500| F[Export Solar + Charge BESS]
+    D -->|Off-Peak Hour R750| G[Export Solar Only]
+    
+    C --> H[Update State of Charge]
+    F --> H
+    E --> H
+    
+    H --> I[Export csv Data Matrix]
+    I --> J[Calculate Asset Revenue Metrics]
