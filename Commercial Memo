@@ -1,0 +1,19 @@
+---
+
+##  Commercial & Investment Case Memo
+
+### To: Investment Committee / Technical Management Team
+### Subject: Commercial Optimization Summary for the 50MW PV + 40MWh BESS Asset
+
+Based on the deterministic 24-hour dispatch simulation, integrating a co-located BESS asset completely alters the commercial viability of the project under the Eskom Megaflex tariff structure.
+
+#### 1. Mitigation of Financial Sunk Costs (Clipping Recovery)
+Without BESS integration, the 50 MW Solar PV asset loses **35.07 MWh** of free generation per day due to the strict 40 MW grid Maximum Export Capacity (MEC) ceiling constraint. By using an algorithmic prioritisation gate, our model captures 100% of this clipped energy vector, rerouting it directly to the storage medium rather than allowing inverter curtailment.
+
+#### 2. Arbitrage and Revenue Shifting Performance
+The asset achieves peak economic efficiency by executing clear time-shifting strategies:
+* **The Challenge:** Peak solar generation occurs between 11:00 and 13:00, when Eskom tariffs sit at a standard rate of R1,500/MWh. 
+* **The Mathematical Fix:** The model stores surplus power during these midday standard hours and holds the charge. It then dispatches the full 20 MW power limit during the high-demand evening peak window (18:00–20:00), when the tariff value spikes by **140% to R3,600/MWh**.
+
+#### 3. Bottom-Line Asset Valuation
+By preventing midday curtailment losses and maximising dispatch during top-tier tariff windows, the hybrid configuration drives a total projected yield of **R899,685.08 per day**. This data matrix forms the foundation for calculating the asset's Levelised Cost of Storage (LCOS), underwriting lender due diligence, and securing financial close.
